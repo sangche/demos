@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>hello-wasm example</title>
+  </head>
+  <body>
+    3 + 5 = <div id="here"/>
+
+<script>
+const here = document.getElementById('here');
+
+(async () => {
+  const response = await fetch('/demos/add.wasm');
+  const buffer = await response.arrayBuffer();
+  const module = await WebAssembly.compile(buffer);
+  const instance = await WebAssembly.instantiate(module);
+  const result = instance.exports.add(3, 5);
+  here.innerHTML = result;
+})();
+</script>
+
+  </body>
+</html>
