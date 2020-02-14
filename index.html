@@ -1,24 +1,10 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>hello-wasm example</title>
-  </head>
-  <body>
-    3 + 5 = <div id="here"/>
-
-<script>
-const here = document.getElementById('here');
-
-(async () => {
-  const response = await fetch('/demos/add.wasm');
-  const buffer = await response.arrayBuffer();
-  const module = await WebAssembly.compile(buffer);
-  const instance = await WebAssembly.instantiate(module);
-  const result = instance.exports.add(3, 5);
-  here.innerHTML = result;
-})();
-</script>
-
-  </body>
+    <head>
+        <link rel="icon" href="data:;base64,iVBORwOKGO=" /> <!--Makes the favicon nothing to prevent a consol error-->
+    </head>
+    <body style="background-color: black; margin: 0; overflow: hidden;">
+        <canvas id="rustCanvas"></canvas>
+        <script src="./bundle.js"></script>
+    </body>
 </html>
