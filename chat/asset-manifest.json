@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/wavechat/static/css/main.492dee98.chunk.css",
+    "main.js": "/wavechat/static/js/main.38ce0a1b.chunk.js",
+    "main.js.map": "/wavechat/static/js/main.38ce0a1b.chunk.js.map",
+    "runtime~main.js": "/wavechat/static/js/runtime~main.3bec93be.js",
+    "runtime~main.js.map": "/wavechat/static/js/runtime~main.3bec93be.js.map",
+    "static/js/2.3e06a44c.chunk.js": "/wavechat/static/js/2.3e06a44c.chunk.js",
+    "static/js/2.3e06a44c.chunk.js.map": "/wavechat/static/js/2.3e06a44c.chunk.js.map",
+    "index.html": "/wavechat/index.html",
+    "precache-manifest.4c962a39fbcf655f273e5c4fde7ef1c2.js": "/wavechat/precache-manifest.4c962a39fbcf655f273e5c4fde7ef1c2.js",
+    "service-worker.js": "/wavechat/service-worker.js",
+    "static/css/main.492dee98.chunk.css.map": "/wavechat/static/css/main.492dee98.chunk.css.map"
+  }
+}
